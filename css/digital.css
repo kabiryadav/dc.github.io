@@ -1,0 +1,399 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  background-color: #fff;
+   
+}
+*{ box-sizing: border-box;}
+ p{font-family: Arial, Helvetica, sans-serif;}
+
+ h2{font-family: "Poppins", sans-serif !important;
+    font-weight: 100 !important;}
+
+#header-nav{margin: 0 20px;}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    transition: background-color 0.5s ease-in-out;
+    z-index: 999;
+    background-color:#D6EB86;
+    
+  }
+ 
+  
+  .header.scrolled {
+    background-color: #333; /* Change to your desired color */
+    color: #fff; /* Change to your desired color */
+  }
+  
+  .content {
+    margin-top: 100px; /* Add a top margin to create space below the fixed header */
+  }
+  /*-- here menu css--*/
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    background-color: rgb(51, 65, 65);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+  .header-m{display: flex;
+            justify-content: space-between;
+            align-items: center;
+            }
+
+  .header-m a{text-decoration: none;
+              color: #fff;
+              margin: 0 15px;
+              display: block;}
+
+  .header-m i{font-size: 1.5rem;}
+
+  #banner-one{background-image: url("../images/banner/banner12.jpg");
+              width: 100%;
+              height: 100vh;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              
+              }
+
+    #big-b{margin-top: 140px;
+          color: #fff;}
+
+    #big-b .heading{width: 100%;
+                    box-sizing: border-box;
+                    text-align: left;
+                     
+                  line-height: 1.4rem;
+                  color: #000;}
+
+      #big-b .heading h1{font-size: 3.3rem;
+                        line-height: 4rem;
+                        font-family: "Poppins", sans-serif;}
+
+    #big-b .heading h2 {
+      font-size: 1.5rem;
+      margin: 0;
+      font-weight: 200;
+      color: #fff;
+      
+  }
+  #big-b .heading .banner__text {
+    padding-bottom: 24px;
+    letter-spacing: normal;
+    
+}
+.banner__text span {
+  font-size: 30px;
+  color: #000;
+  margin: 0;
+  max-width: 490px;
+  line-height: 1.2;
+  position: relative;
+  padding-bottom: 1.5rem;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}
+#btn{width: 250px;
+    text-decoration: none;
+    outline: none;
+    background-color: darkslategray;
+    color: #fff;
+     }
+
+    #btn a:hover{background-color: transparent;
+                  outline: none;
+                  color: #fff;}
+
+    .sub-banner__text span {
+      font-size: 27px;
+      margin-top: 0;
+      padding-top: 40px;
+      color: #fff;
+  }
+
+  .sub-banner__text span:before {
+    content: " ";
+    width: 102.7px;
+    height: 8px;
+    border-radius: 4px;
+    left: 60px;
+    display: block;
+    position: relative;
+    background: #414042;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.marqueeMain {
+  border-bottom: 1px solid rgb(64 211 185 / 30%);
+}
+
+.page-width {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.marquee-content{
+  display: flex;
+  animation: scrolling 20s linear infinite;
+}
+
+.marquee-item{flex: 0 0 13vw;
+              margin: 0 1vw;}
+
+.marquee-item img{display: block;
+                  width: 100%;}
+
+            @keyframes scrolling {
+              0%{transform: translateX(0);}
+              100%{transform: translatex(-144vw);}
+            }
+            .section-title {
+              font-size: 44px;
+              font-weight: 700;
+              text-align: center;
+              line-height: 1.25;
+              margin-bottom: 30px!important;
+          }
+          .accordion .card .card-body, .section-title {
+            letter-spacing: -.22px;
+            font-style: normal;
+            font-stretch: normal;
+        }
+
+        .content__wrapper {
+          max-width: 690px;
+          margin: 0 auto;
+      }
+      .subheading {
+        font-size: 18px;
+        line-height: 1.61;
+        color: #414042;
+        padding: 24px 0!important;
+        letter-spacing: 0;
+        text-transform: uppercase;
+    }
+    .description {
+      font-size: 24px;
+      line-height: 1.5;
+      letter-spacing: -0.24px;
+      color: #939598;
+  }
+
+  .three_fold{background-image: url("../images/banner/home-sec_26f98611-d0f2-4816-8440-1502e24c9ed2.webp");
+              background-size: 100%;
+              background-repeat: no-repeat,no-repeat;
+              padding: 30px 0 20px;
+              width: 100%;}
+
+              .three-fold-head {
+                font-size: 44px;
+                font-weight: 700;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.25;
+                letter-spacing: -.22px;
+                margin-bottom: 30px!important;
+                position: relative;
+                /* padding-top: 40px; */
+            }
+
+            .solution-section .img-section .caption h5:first-child {
+              top: 51%;
+              left: 0;
+          }
+          .solution-section .img-section .caption h5 {
+            position: absolute;
+            width: 170px;
+        }
+
+        #million{display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                width: 80%;
+                 
+                }
+
+      #million .numbar{margin: 30px;}
+
+      #million .numbar .num-text{display: block;
+                                border-bottom: 1px solid rgb(69, 239, 69);
+                                font-weight: 500;
+                                }
+
+        .image-text{font-size: 1.3rem;}
+
+        /*---here is counter css */
+
+/*        
+.counter-box {
+	display: block;
+	background: #f6f6f6;
+	 
+	text-align: center
+}
+
+.counter-box p {
+	 
+	 
+	color: #909090;
+	font-size: 8px;
+	font-weight: 500
+}
+
+.counter-box i {
+	font-size: 20px;
+	margin: 0 0 15px;
+	color: #d2d2d2
+}
+
+.counter { 
+	display: block;
+	font-size: 32px;
+	font-weight: 700;
+	color: #666;
+	line-height: 28px
+}
+
+.counter-box.colored {
+      background: #3acf87;
+}
+
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+	color: #fff
+}*/
+.transplant_bg1 {
+  position: relative;
+}
+ #c-m{margin: 50px;}
+
+ 
+ .footer-top {
+  background: #656565;
+  padding: 30px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #fff;
+  text-align: left;  
+}
+
+#f-n{margin: 0px 0px !important;}
+
+#text-banner img{width: 100%;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;} 
+
+/*--- here is slider code start*/
+
+ /* Google Fonts - Poppins */
+ 
+  
+  
+
+
+/*--end here slider code here*/
+
+
+            /*-- min width 767px--*/
+            @media only screen and(min-width:767px){
+              .marqueeMain{border-bottom: 1px solid green;}
+
+              .marquee-item img{width: 160px;}
+            }
+
+            /*-- max width 767px--*/
+
+            @media only screen and(max-width:767px){
+              .marquee-item{flex: 0 0 40%;}
+
+              .marquee{overflow: hidden;
+                    border-bottom: 1px solid green;}
+                    
+              .marquee-item img{width: 115px;}
+            }
+
+            /*--min width 750px--*/
+            @media only screen and(min-width:767px){
+              .page-width {
+                padding: 0 5rem;
+            }
+            }
+
+
+/*-- here is meadia --*/
+ @media only screen and(min-width:767px) {
+  .marqueeMain {
+    overflow: hidden;
+    border-bottom: 1px solid rgb(64 211 185 / 30%);
+  }
+  
+ }
+
+ @media(max-width:600px){
+   p{color: red;}
+
+    
+ }
+
+  /*--- here is index2 css--*/--------------
+
+   
